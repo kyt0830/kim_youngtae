@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>김영태 | 프론트엔드 개발자</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- header -->
+    <header class="header">
+      <!-- inner -->
+      <div class="inner">
+        <nav>
+          <!-- logo -->
+          <h1 class="logo">
+            <a href="index.html">Kim Youngtae</a>
+          </h1>
+          <ul class="gnb">
+            <li><a href="#home" class="menu">홈</a></li>
+            <li><a href="#portfolio" class="menu">포트폴리오</a></li>
+            <li><a href="#skill" class="menu">스킬 &amp; 경험</a></li>
+            <li><a href="#development" class="menu">자기개발</a></li>
+            <li><a href="#contact" class="menu">연락처</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- //header -->
+
+    <!-- contents -->
+    <div class="main_content">
+      <!-- 홈 -->
+      <div class="home" id="home">
+        <div class="profile_card">
+          <div class="photo_box">
+            <img src="images/profile_photo.jpg" alt="프로필사진">
+          </div>
+          <div class="info_box">
+            <h2 class="slowgun">
+              새로운 기술과 더 나은 경험을 고민하며,<br>
+              결과로 성장과 가치를 증명할 수 있는 개발자가 되겠습니다.
+            </h2>
+            <div class="info_item">
+              <span class="info_label">이름</span>
+              <span class="info_value">김영태</span>
+            </div>
+            <div class="info_item">
+              <span class="info_label">나이</span>
+              <span class="info_value">1991.08.30</span>
+            </div>
+            <div class="info_item">
+              <span class="info_label">연락처</span>
+              <span class="info_value">010.9955.3739</span>
+            </div>
+            <div class="info_item">
+              <span class="info_label">이메일</span>
+              <span class="info_value"><a href="mailto:kyt910830@gmail.com">kyt910830@gmail.com</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //홈 -->
+
+      <!-- 포트폴리오 -->
+      <div class="portfolio" id="portfolio">
+        <h2 class="sub_title">포트폴리오</h2>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- slide1 -->
+            <div class="swiper-slide">
+              <!-- left -->
+
+              <div class="slide_content">
+                <div class="project_info">
+                  <h3 class="info_title">프로젝트 명</h3>
+                  <p class="info_description">팀 프로젝트 Campick</p>
+                </div>
+
+                <div class="project_info">
+                  <h3 class="info_title">담당 파트</h3>
+                  <p class="info_description">
+                    HTML5환경 컴포넌트 전체 담당,<br>
+                    메인페이지, 상품상세, 상품등록,<br>
+                    메세지리스트, 채팅룸</p>
+                </div>
+
+                <div class="project_info">
+                  <h3 class="info_title">참여율</h3>
+                  <ul class="participation_list">
+                    <li class="participation_item">
+                      <span class="participation_label">기획</span>
+                      <span class="participation_value">40%</span>
+                    </li>
+                    <li class="participation_item">
+                      <span class="participation_label">디자인</span>
+                      <span class="participation_value">20%</span>
+                    </li>
+                    <li class="participation_item">
+                      <span class="participation_label">프론트엔드</span>
+                      <span class="participation_value">40%</span>
+                    </li>
+                    <li class="participation_item">
+                      <span class="participation_label">백엔드</span>
+                      <span class="participation_value">100%</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="project_info">
+                  <h3 class="info_title">스킬</h3>
+                  <ul class="skills_list">
+                    <li class="skill_item">
+                      <img src="images/react.png" alt="react" class="skill_icon">
+                    </li>
+                    <li class="skill_item">
+                      <img src="images/nextjs.png" alt="next.js" class="skill_icon">
+                    </li>
+                    <li class="skill_item">
+                      <img src="images/supabase.png" alt="supabase" class="skill_icon">
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="project_info">
+                  <h3 class="info_title">둘러보기</h3>
+                  <div class="project_links">
+                    <a href="https://campick-project.vercel.app/" target="_blank" class="link_site">Go To Site</a>
+
+                    <a href="https://www.figma.com/deck/o8MKfkv80NdocmCboAfsKu/3%EC%B0%A8-%EC%BA%A0%ED%94%BD-PPT?node-id=2-2118&t=pbpgdv7genVz8NM1-1" target="_blank" class="link_ppt">
+                      <img src="images/ppt_mini.png" alt="파워포인트">
+                    </a>
+
+                    <a href="https://github.com/kyt0830/campick_project" target="_blank" class="link_git">
+                      <img src="images/git_mini.png" alt="깃허브">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- right -->
+              <div class="slide_preview">
+                <a href="https://campick-project.vercel.app/" target="_blank">
+                  <img src="images/slide_item1.jpg" alt="홈페이지 미리보기">
+                </a>
+              </div>
+
+            </div>
+            <!-- slide2 -->
+            <div class="swiper-slide">
+              <!-- left -->
+
+              <div class="slide_content">
+                <div class="project_info">
+                  <h3 class="info_title">프로젝트 명</h3>
+                  <p class="info_description">[팀] CGV 리뉴얼 프로젝트</p>
+                </div>
+
+                <div class="project_info">
+                  <h3 class="info_title">담당 파트</h3>
+                  <p class="info_description">헤더, 메인, 추천영화(날씨데이터), 푸터</p>
+                  <p class="info_description">영화순위 & 영화소개(서브페이지)</p>
+                </div>
+
+                <div class="project_info">
+                  <h3 class="info_title">참여율</h3>
+                  <ul class="participation_list">
+                    <li class="participation_item">
+                      <span class="participation_label">기획</span>
+                      <span class="participation_value">60%</span>
+                    </li>
+                    <li class="participation_item">
+                      <span class="participation_label">디자인</span>
+                      <span class="participation_value">70%</span>
+                    </li>
+                    <li class="participation_item">
+                      <span class="participation_label">프론트엔드</span>
+                      <span class="participation_value">40%</span>
+                    </li>
+                    <li class="participation_item">
+                      <span class="participation_label">백엔드</span>
+                      <span class="participation_value">10%</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="project_info">
+                  <h3 class="info_title">스킬</h3>
+                  <ul class="skills_list">
+                    <li class="skill_item">
+                      <img src="images/php.png" alt="php" class="skill_icon">
+                    </li>
+                    <li class="skill_item">
+                      <img src="images/mysql.png" alt="mysql" class="skill_icon">
+                    </li>
+                    <li class="skill_item">
+                      <img src="images/java.png" alt="javascript" class="skill_icon">
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="project_info">
+                  <h3 class="info_title">둘러보기</h3>
+                  <div class="project_links">
+                    <a href="http://kytkyt910830.dothome.co.kr/cgv/" target="_blank" class="link_site">Go To Site</a>
+
+                    <a href="https://www.figma.com/deck/fW4DByiNGLEvzvNIbLSPP1/2%EC%B0%A8-CGV-%EB%A6%AC%EB%89%B4%EC%96%BC-PPT?node-id=1-1010&t=PqEHqMzCyMpANqGj-1" target="_blank" class="link_ppt">
+                      <img src="images/ppt_mini.png" alt="파워포인트">
+                    </a>
+
+                    <a href="https://github.com/kyt0830/Renewal_project_Cgv" target="_blank" class="link_git">
+                      <img src="images/git_mini.png" alt="깃허브">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- right -->
+              <div class="slide_preview">
+                <a href="http://kytkyt910830.dothome.co.kr/cgv/" target="_blank">
+                  <img src="images/slide_item2.jpg" alt="홈페이지 미리보기">
+                </a>
+              </div>
+
+            </div>
+            <!-- slide3 -->
+            <div class="swiper-slide">
+              <!-- left -->
+
+              <div class="slide_content">
+                <div class="project_info">
+                  <h3 class="info_title">프로젝트 명</h3>
+                  <p class="info_description">[팀] Vanilla Script 로레알코리아 리뉴얼 프로젝트</p>
+                </div>
+
+                <div class="project_info">
+                  <h3 class="info_title">담당 파트</h3>
+                  <p class="info_description">헤더, 메인, 브랜드, ESG</p>
+                </div>
+
+                <div class="project_info">
+                  <h3 class="info_title">참여율</h3>
+                  <ul class="participation_list">
+                    <li class="participation_item">
+                      <span class="participation_label">기획</span>
+                      <span class="participation_value">70%</span>
+                    </li>
+                    <li class="participation_item">
+                      <span class="participation_label">디자인</span>
+                      <span class="participation_value">40%</span>
+                    </li>
+                    <li class="participation_item">
+                      <span class="participation_label">퍼블리싱</span>
+                      <span class="participation_value">60%</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="project_info">
+                  <h3 class="info_title">스킬</h3>
+                  <ul class="skills_list">
+                    <li class="skill_item">
+                      <img src="images/html5.png" alt="html5" class="skill_icon">
+                    </li>
+                    <li class="skill_item">
+                      <img src="images/css.png" alt="css3" class="skill_icon">
+                    </li>
+                    <li class="skill_item">
+                      <img src="images/java.png" alt="javascript" class="skill_icon">
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="project_info">
+                  <h3 class="info_title">둘러보기</h3>
+                  <div class="project_links">
+                    <a href="https://kyt0830.github.io/project01/" target="_blank" class="link_site">Go To Site</a>
+
+                    <a href="https://www.figma.com/deck/dsNqJRiqx2yZj6nN1fsHGp/1%EC%B0%A8-%EB%A1%9C%EB%A0%88%EC%95%8C-%EB%A6%AC%EB%89%B4%EC%96%BC-PPT?node-id=1-101&t=zXGGkgGJqIg6ul1K-1" target="_blank" class="link_ppt">
+                      <img src="images/ppt_mini.png" alt="파워포인트">
+                    </a>
+
+                    <a href="https://github.com/kyt0830/project01" target="_blank" class="link_git">
+                      <img src="images/git_mini.png" alt="깃허브">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- right -->
+              <div class="slide_preview">
+                <a href="https://kyt0830.github.io/project01/" target="_blank">
+                  <img src="images/slide_item3.jpg" alt="홈페이지 미리보기">
+                </a>
+              </div>
+
+            </div>
+            <!-- slide4 -->
+            <div class="swiper-slide">
+              <!-- left -->
+
+              <div class="slide_content">
+                <div class="project_info">
+                  <h3 class="info_title">프로젝트 명</h3>
+                  <p class="info_description">[개인] 반응형 Practice XLGames 리뉴얼 프로젝트 </p>
+                </div>
+
+                <div class="project_info">
+                  <h3 class="info_title">담당 파트</h3>
+                  <p class="info_description">프로젝트 전체 담당</p>
+                </div>
+
+                <div class="project_info">
+                  <h3 class="info_title">참여율</h3>
+                  <ul class="participation_list">
+                    <li class="participation_item">
+                      <span class="participation_label">기획</span>
+                      <span class="participation_value">100%</span>
+                    </li>
+                    <li class="participation_item">
+                      <span class="participation_label">디자인</span>
+                      <span class="participation_value">100%</span>
+                    </li>
+                    <li class="participation_item">
+                      <span class="participation_label">퍼블리싱</span>
+                      <span class="participation_value">100%</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="project_info">
+                  <h3 class="info_title">스킬</h3>
+                  <ul class="skills_list">
+                    <li class="skill_item">
+                      <img src="images/html5.png" alt="html5" class="skill_icon">
+                    </li>
+                    <li class="skill_item">
+                      <img src="images/css.png" alt="css3" class="skill_icon">
+                    </li>
+                    <li class="skill_item">
+                      <img src="images/java.png" alt="javascript" class="skill_icon">
+                    </li>
+                    <li class="skill_item">
+                      <img src="images/jquery.png" alt="jquery" class="skill_icon">
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="project_info">
+                  <h3 class="info_title">둘러보기</h3>
+                  <div class="project_links">
+                    <a href="https://kyt0830.github.io/portfolio2/" target="_blank" class="link_site">Go To Site</a>
+
+                    <a href="https://github.com/kyt0830/portfolio2" target="_blank" class="link_git">
+                      <img src="images/git_mini.png" alt="깃허브">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- right -->
+              <div class="slide_preview">
+                <a href="https://kyt0830.github.io/portfolio2/" target="_blank">
+                  <img src="images/slide_item4.jpg" alt="">
+                </a>
+              </div>
+
+            </div>
+            <!-- slide5 -->
+            <div class="swiper-slide">
+              <!-- left -->
+
+              <div class="slide_content">
+                <div class="project_info">
+                  <h3 class="info_title">프로젝트 명</h3>
+                  <p class="info_description">[개인] 프리메라 리뉴얼 프로젝트</p>
+                </div>
+                <div class="project_info">
+                  <h3 class="info_title">담당 파트</h3>
+                  <p class="info_description">프로젝트 전체 담당</p>
+                </div>
+                <div class="project_info">
+                  <h3 class="info_title">참여율</h3>
+                  <ul class="participation_list">
+                    <li class="participation_item">
+                      <span class="participation_label">기획</span>
+                      <span class="participation_value">100%</span>
+                    </li>
+                    <li class="participation_item">
+                      <span class="participation_label">디자인</span>
+                      <span class="participation_value">100%</span>
+                    </li>
+                    <li class="participation_item">
+                      <span class="participation_label">퍼블리싱</span>
+                      <span class="participation_value">100%</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="project_info">
+                  <h3 class="info_title">스킬</h3>
+                  <ul class="skills_list">
+                    <li class="skill_item">
+                      <img src="images/html5.png" alt="html5" class="skill_icon">
+                    </li>
+                    <li class="skill_item">
+                      <img src="images/css.png" alt="css3" class="skill_icon">
+                    </li>
+                    <li class="skill_item">
+                      <img src="images/java.png" alt="javascript" class="skill_icon">
+                    </li>
+                    <li class="skill_item">
+                      <img src="images/jquery.png" alt="jquery" class="skill_icon">
+                    </li>
+                  </ul>
+                </div>
+                <div class="project_info">
+                  <h3 class="info_title">둘러보기</h3>
+                  <div class="project_links">
+                    <a href="https://kyt0830.github.io/portfolio/" target="_blank" class="link_site">Go To Site</a>
+
+                    <a href="https://www.figma.com/deck/021DVnMrjNtcWWdcsACTgp/1%EC%B0%A8-%EC%9B%B9-%ED%8D%BC%EB%B8%94%EB%A6%AC%EC%85%94-%EB%B0%9C%ED%91%9C%ED%9A%8C?node-id=0-20&t=HLtfq0EReE41wyl6-1" target="_blank" class="link_ppt">
+                      <img src="images/ppt_mini.png" alt="파워포인트">
+                    </a>
+
+                    <a href="https://github.com/kyt0830/portfolio" target="_blank" class="link_git">
+                      <img src="images/git_mini.png" alt="깃허브">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- right -->
+              <div class="slide_preview">
+                <a href="https://kyt0830.github.io/portfolio/" target="_blank">
+                  <img src="images/slide_item5.jpg" alt="미리보기">
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- //포트폴리오 -->
+
+      <!-- 스킬 & 경험 -->
+      <div class="skill" id="skill">
+        <h2 class="sub_title">스킬 & 경험</h2>
+        <ul class="card_list">
+          <!-- 디자인 -->
+          <li class="item">
+            <h3 class="item_title">디자인</h3>
+            <div class="item_list">
+              <div class="icon_box">
+                <img src="images/figma.png" alt="">
+              </div>
+              <span class="list_title">Figma</span>
+            </div>
+            <div class="item_list">
+              <div class="icon_box">
+                <img src="images/photoshop.png" alt="">
+              </div>
+              <span class="list_title">Photoshop</span>
+            </div>
+          </li>
+
+          <!-- 퍼블리싱 -->
+          <li class="item">
+            <h3 class="item_title">퍼블리싱</h3>
+            <div class="item_list">
+              <div class="icon_box">
+                <img src="images/html5.png" alt="">
+              </div>
+              <span class="list_title">HTML5</span>
+            </div>
+            <div class="item_list">
+              <div class="icon_box">
+                <img src="images/css.png" alt="">
+              </div>
+              <span class="list_title">CSS3</span>
+            </div>
+            <div class="item_list">
+              <div class="icon_box">
+                <img src="images/java.png" alt="">
+              </div>
+              <span class="list_title">Javascript</span>
+            </div>
+            <div class="item_list">
+              <div class="icon_box">
+                <img src="images/jquery.png" alt="">
+              </div>
+              <span class="list_title">jQuery</span>
+            </div>
+            <div class="item_list">
+              <div class="icon_box">
+                <img src="images/wordpress.png" alt="">
+              </div>
+              <span class="list_title">WordPress</span>
+            </div>
+            <div class="item_list">
+              <div class="icon_box">
+                <img src="images/gunboard5.png" alt="">
+              </div>
+              <span class="list_title">Gunboard5</span>
+            </div>
+          </li>
+
+          <!-- 프론트 & 백 -->
+          <li class="item">
+            <h3 class="item_title">프론트 & 백</h3>
+            <div class="item_list">
+              <div class="icon_box">
+                <img src="images/react.png" alt="">
+              </div>
+              <span class="list_title">React</span>
+            </div>
+            <div class="item_list">
+              <div class="icon_box">
+                <img src="images/nextjs.png" alt="">
+              </div>
+              <span class="list_title">Next.js</span>
+            </div>
+            <div class="item_list">
+              <div class="icon_box">
+                <img src="images/vuejs.png" alt="">
+              </div>
+              <span class="list_title">Vue.js</span>
+            </div>
+            <div class="item_list">
+              <div class="icon_box">
+                <img src="images/php.png" alt="">
+              </div>
+              <span class="list_title">PHP</span>
+            </div>
+            <div class="item_list">
+              <div class="icon_box">
+                <img src="images/mysql.png" alt="">
+              </div>
+              <span class="list_title">MySQL</span>
+            </div>
+            <div class="item_list">
+              <div class="icon_box">
+                <img src="images/supabase.png" alt="">
+              </div>
+              <span class="list_title">Supabase</span>
+            </div>
+            <div class="item_list">
+              <div class="icon_box">
+                <img src="images/firebase.png" alt="">
+              </div>
+              <span class="list_title">Firebase</span>
+            </div>
+          </li>
+
+          <!-- 그 외 -->
+          <li class="item">
+            <h3 class="item_title">그 외</h3>
+            <div class="item_list">
+              <div class="icon_box">
+                <img src="images/bootstrap.png" alt="">
+              </div>
+              <span class="list_title">Bootstrap</span>
+            </div>
+            <div class="item_list">
+              <div class="icon_box">
+                <img src="images/tailwind.png" alt="">
+              </div>
+              <span class="list_title">Tailwind CSS</span>
+            </div>
+            <div class="item_list">
+              <div class="icon_box">
+                <img src="images/notion.png" alt="">
+              </div>
+              <span class="list_title">Notion</span>
+            </div>
+            <div class="item_list">
+              <div class="icon_box">
+                <img src="images/git.png" alt="">
+              </div>
+              <span class="list_title">Git</span>
+            </div>
+            <div class="item_list">
+              <div class="icon_box">
+                <img src="images/vercel.png" alt="">
+              </div>
+              <span class="list_title">Vercel</span>
+            </div>
+            <div class="item_list">
+              <div class="icon_box">
+                <img src="images/chatGPT.png" alt="">
+              </div>
+              <span class="list_title">ChatGPT</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- //스킬 & 경험 -->
+
+      <!-- 자기개발 -->
+      <div class="development" id="development">
+        <!-- development -->
+        <div class="development_section">
+          <h2 class="sub_title">자기개발 현황</h2>
+          <ul class="card_list">
+            <!-- item1 -->
+            <li class="item">
+              <!-- img -->
+              <div class="item_icon_box">
+                <img src="images/jlpt.png" alt="">
+              </div>
+              <!-- text -->
+              <div class="item_text_box">
+                <h3 class="card_item_title">일본어 자격증</h3>
+                <p class="card_item_text">JLPT N2급 준비중</p>
+                <p class="card_item_text">12월 응시예정</p>
+              </div>
+            </li>
+            <!-- item2 -->
+            <li class="item">
+              <!-- img -->
+              <div class="item_icon_box">
+                <img src="images/sql.png" alt="">
+              </div>
+              <!-- text -->
+              <div class="item_text_box">
+                <h3 class="card_item_title">SQL 자격증</h3>
+                <p class="card_item_text">SQLD 자격증 준비중</p>
+                <p class="card_item_text">2026년 1분기 응시예정</p>
+              </div>
+            </li>
+            <!-- item3 -->
+            <li class="item">
+              <!-- img -->
+              <div class="item_icon_box">
+                <img src="images/excel.png" alt="">
+              </div>
+              <!-- text -->
+              <div class="item_text_box">
+                <h3 class="card_item_title">컴퓨터활용능력 자격증</h3>
+                <p class="card_item_text">컴퓨터활용능력 1급 준비중</p>
+                <p class="card_item_text">2026년 1분기 응시예정</p>
+              </div>
+            </li>
+            <!-- item4 -->
+            <li class="item">
+              <!-- img -->
+              <div class="item_icon_box">
+                <img src="images/react_big.png" alt="">
+              </div>
+              <!-- text -->
+              <div class="item_text_box">
+                <h3 class="card_item_title">React 학습</h3>
+                <p class="card_item_text">모던 프론트엔드</p>
+                <p class="card_item_text">독학 진행중</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- TMI -->
+        <div class="tmi_section">
+          <h2 class="sub_title">영머맨 TMI</h2>
+          <ul class="card_list">
+            <!-- item1 -->
+            <li class="item">
+              <!-- img -->
+              <div class="item_icon_box">
+                <img src="images/gardening.png" alt="">
+              </div>
+              <!-- text -->
+              <div>
+                <h3 class="card_item_title">가드닝</h3>
+                <p class="card_item_text">식물을 가꾸며 힐링해요</p>
+              </div>
+            </li>
+            <!-- item2 -->
+            <li class="item">
+              <!-- img -->
+              <div class="item_icon_box">
+                <img src="images/health.png" alt="">
+              </div>
+              <!-- text -->
+              <div>
+                <h3 class="card_item_title">헬스</h3>
+                <p class="card_item_text">건강한 신체에 건강한 정신</p>
+              </div>
+            </li>
+            <!-- item3 -->
+            <li class="item">
+              <!-- img -->
+              <div class="item_icon_box">
+                <img src="images/music.png" alt="">
+              </div>
+              <!-- text -->
+              <div>
+                <h3 class="card_item_title">음악 감상</h3>
+                <p class="card_item_text">최근 재즈를 즐겨 듣고 있어요</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- //자기개발 -->
+
+      <!-- 연락처 -->
+      <div class="contact" id="contact">
+        <h2 class="sub_title">연락처</h2>
+        <div class="contact_card">
+          <!-- left -->
+          <div class="contact_info">
+            <ul class="info_list">
+              <li class="info_item">
+                <h3 class="info_title apply">지원분야</h3>
+                <p class="info_text">프론트엔드</p>
+                <p class="info_text">웹 퍼블리셔</p>
+              </li>
+              <li class="info_item">
+                <h3 class="info_title email">이메일</h3>
+                <p class="info_text"><a href="#">kyt910830@gmail.com</a></p>
+              </li>
+              <li class="info_item">
+                <h3 class="info_title phone">연락처</h3>
+                <p class="info_text">010 9955 3739</p>
+              </li>
+              <li class="info_item address">
+                <h3 class="info_title">주소</h3>
+                <p class="info_text">경기도 구리시 건원대로</p>
+              </li>
+            </ul>
+          </div>
+          <!-- right -->
+          <div class="contact_form">
+            <form id="contactForm" class="form">
+              <div class="form_group">
+                <label for="name" class="form_label">방문자 성함</label>
+                <input type="text" id="name" name="name" class="form_input" placeholder="이름을 입력해주세요">
+              </div>
+              <div class="form_group">
+                <label for="email" class="form_label">이메일</label>
+                <input type="email" id="email" name="email" class="form_input" placeholder="your email">
+              </div>
+              <div class="form_group">
+                <label for="message" class="form_label message">메시지</label>
+                <textarea id="message" name="message" class="form_textarea"></textarea>
+              </div>
+              <div class="btn_box">
+                <button type="submit" class="form_button">전송</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- //연락처 -->
+    </div>
+    <!-- //contents -->
+
+    <!-- footer -->
+    <footer>
+      © 2025 portfolio by 김영태
+    </footer>
+    <!-- //footer -->
+  </div>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,  // 페이지네이션 클릭 가능하게
+      },
+      // mousewheel: true,
+      // keyboard: true,
+
+      // 추가 옵션들
+      loop: true,  // 무한 루프
+      autoplay: {  // 자동 재생
+        delay: 10000,
+        disableOnInteraction: false,
+      },
+      speed: 600,  // 전환 속도
+    });
+  </script>
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script>
+    emailjs.init("cTaT3EFfuTr-K-2Ko");
+
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      emailjs.sendForm('service_26secz5', 'template_cvag7qt', this)
+        .then(() => alert('전송 성공!'))
+        .catch(() => alert('전송 실패'));
+    });
+  </script>
+  <!-- Smooth Scroll -->
+  <script>
+    const headerHeight = document.querySelector(".header").offsetHeight;
+    const offsetAdjust = -70;
+
+    document.querySelectorAll('.menu').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute("href");
+        const target = document.querySelector(targetId);
+
+        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = targetPosition - headerHeight + offsetAdjust;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>

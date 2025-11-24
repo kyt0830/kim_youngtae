@@ -1,0 +1,539 @@
+/* reset css */
+html,
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* common css */
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* style css */
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    position: fixed;
+    box-shadow: 8px 8px 28px rgba(0, 0, 0, 0.05);
+    z-index: 999;
+}
+
+.header nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #333;
+    font-weight: 900;
+}
+
+.logo a:hover {
+    color: #007AFF;
+}
+
+.gnb {
+    display: flex;
+    gap: 24px;
+}
+
+.gnb li a:hover {
+    color: #007AFF;
+}
+
+.main_content {
+    padding-top: 80px;
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* 흠 */
+.home {
+    width: 100%;
+    height: 760px;
+    position: relative;
+}
+
+.profile_card {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    width: 1200px;
+    padding: 83px 78px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 8px 8px 28px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+}
+
+.profile_card .photo_box {
+    width: 250px;
+    height: 334px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.profile_card .photo_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile_card .slowgun {
+    color: #333;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -2px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.profile_card .info_box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.profile_card .info_box .info_item {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.profile_card .info_box .info_label {
+    display: block;
+    width: 180px;
+    line-height: 48px;
+    font-size: 24px;
+    background-color: #333;
+    border-radius: 24px;
+    color: #fff;
+    text-align: center;
+}
+
+.profile_card .info_box .info_value {
+    color: #333;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.profile_card .info_box .info_value a {
+    color: #007AFF;
+    font-weight: 300;
+}
+
+.profile_card .info_box .info_value a:hover {
+    text-decoration: underline;
+}
+
+/* //흠 */
+
+/* 포트폴리오 */
+.portfolio {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.sub_title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.swiper {
+    width: 100%;
+    box-shadow: 8px 8px 28px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+}
+
+.swiper-slide {
+    /* background: #f7f7f7; */
+    padding: 70px 70px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide .slide_content {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.swiper-slide .slide_content .info_title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.swiper-slide .slide_content .info_title .info_description {
+    font-size: 18px;
+    font-weight: 400;
+    color: #3d3d3d;
+}
+
+.swiper-slide .slide_content .participation_list .participation_item {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.swiper-slide .slide_content .skills_list {
+    display: flex;
+    gap: 12px;
+
+}
+
+.swiper-slide .slide_content .skills_list .skill_item {
+    width: 48px;
+    height: 48px;
+}
+
+.swiper-slide .slide_content .skills_list .skill_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide .slide_content .project_links {
+    display: flex;
+    gap: 12px;
+}
+
+.link_site {
+    width: 120px;
+    line-height: 48px;
+    background-color: #007AFF;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.link_site:hover {
+    background-color: #0060c7;
+}
+
+.link_ppt,
+.link_git {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #666;
+    border-radius: 4px;
+}
+
+.link_ppt:hover,
+.link_git:hover {
+    background-color: #e5e5e5;
+}
+
+.link_ppt img,
+.link_git img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    display: block;
+    margin: 12px;
+}
+
+
+.swiper-slide .slide_preview {
+    width: 70%;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 8px 8px 28px rgba(0, 0, 0, 0.05);
+}
+
+.swiper-slide .slide_preview a {
+    display: block;
+}
+
+.swiper-slide .slide_preview a:hover img {
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+
+.swiper-slide .slide_preview a img {
+    width: 100%;
+    height: 100%;
+    transition-duration: 1s;
+    object-fit: cover;
+}
+
+/* //포트폴리오 */
+
+/* 스킬 & 경험 */
+.skill {
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+.skill .card_list {
+    display: flex;
+    gap: 24px;
+    align-items: start;
+}
+
+.skill .card_list .item {
+    width: 25%;
+    box-shadow: 8px 8px 28px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    padding-left: 40px;
+}
+
+.skill .card_list .item .item_title {
+    padding: 24px 0;
+    margin-left: -40px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+}
+
+.skill .card_list .item .item_list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 16px;
+}
+
+.skill .card_list .item .item_list .list_title {
+    font-size: 20px;
+    color: #333;
+}
+
+/* //스킬 & 경험 */
+
+/* 자기개발 */
+.development {
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+.development .development_section {
+    margin-bottom: 40px;
+}
+
+.development .development_section .card_list {
+    display: flex;
+    gap: 24px;
+    align-items: start;
+}
+
+.development .development_section .card_list .item {
+    width: 262px;
+    padding: 18px 0;
+    box-sizing: border-box;
+    box-shadow: 8px 8px 28px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+}
+
+.item_icon_box {
+    display: flex;
+    justify-content: center;
+}
+
+.development .tmi_section .card_list {
+    display: flex;
+    gap: 24px;
+    align-items: start;
+}
+
+.development .tmi_section .card_list .item {
+    width: 262px;
+    padding: 18px 0;
+    box-sizing: border-box;
+    box-shadow: 8px 8px 28px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+}
+
+.card_item_title {
+    margin-top: 12px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+}
+
+.card_item_text {
+    text-align: center;
+    margin-bottom: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+.card_item_text:last-child {
+    font-size: 12px;
+    color: #666
+}
+
+/* //자기개발 */
+
+
+/* 연락처 */
+.contact {
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+.contact .contact_card {
+    padding: 40px 0 50px 40px;
+    display: flex;
+    gap: 35px;
+    box-shadow: 8px 8px 28px rgba(0, 0, 0, 0.05);
+    border-radius: 32px;
+}
+
+.contact .contact_card .contact_info {
+    width: 300px;
+    background-color: #f3f3f3;
+    border-radius: 16px;
+    padding: 40px 0 40px 30px;
+}
+
+.contact .contact_card .contact_form {
+    width: 770px;
+    padding: 40px 50px 40px 30px;
+}
+
+.contact .info_item {
+    margin-bottom: 24px;
+}
+
+.contact .info_title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    padding-left: 24px;
+    box-sizing: border-box;
+    position: relative;
+    color: #333;
+}
+
+.contact .info_title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.info_text {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.apply {
+    background: url('../images/apply.png') no-repeat;
+}
+
+.email {
+    background: url('../images/email.png') no-repeat;
+}
+
+.phone {
+    background: url('../images/phone.png') no-repeat;
+}
+
+.address {
+    background: url('../images/address.png') no-repeat;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+
+}
+
+.form_label {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.form_input {
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.form_textarea {
+    height: 60px;
+    border: 1px solid #ccc;
+}
+
+.message {
+    margin-bottom: 12px;
+}
+
+.btn_box {
+    text-align: right;
+}
+
+.form_button {
+    display: inline-block;
+    background-color: #007AFF;
+    width: 120px;
+    height: 48px;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.form_button:hover {
+    background-color: #0060c7;
+}
+
+/* //연락처 */
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* //footer */

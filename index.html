@@ -48,7 +48,7 @@
     <!-- contents -->
     <div class="main_content">
       <!-- 홈 -->
-      <div class="home" id="home">
+      <div class="home reveal" id="home">
         <div class="profile_card">
           <div class="photo_box">
             <img src="images/profile_photo.jpg" alt="프로필사진">
@@ -80,7 +80,7 @@
       <!-- //홈 -->
 
       <!-- 포트폴리오 -->
-      <div class="portfolio" id="portfolio">
+      <div class="portfolio reveal" id="portfolio">
         <h2 class="sub_title">포트폴리오</h2>
         <!-- Swiper -->
         <div class="swiper mySwiper">
@@ -468,7 +468,7 @@
       <!-- //포트폴리오 -->
 
       <!-- 스킬 & 경험 -->
-      <div class="skill" id="skill">
+      <div class="skill reveal" id="skill">
         <h2 class="sub_title">스킬 & 경험</h2>
         <ul class="card_list">
           <!-- 디자인 -->
@@ -621,7 +621,7 @@
       <!-- //스킬 & 경험 -->
 
       <!-- 자기개발 -->
-      <div class="development" id="development">
+      <div class="development reveal" id="development">
         <!-- development -->
         <div class="development_section">
           <h2 class="sub_title">자기개발 현황</h2>
@@ -738,7 +738,7 @@
       <!-- //자기개발 -->
 
       <!-- 연락처 -->
-      <div class="contact" id="contact">
+      <div class="contact reveal" id="contact">
         <h2 class="sub_title">연락처</h2>
         <div class="contact_card">
           <!-- left -->
@@ -855,7 +855,18 @@
       });
     });
   </script>
-
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- Fade In -->
+  <script>
+    ScrollReveal().reveal('.reveal', {
+      origin: 'bottom',       // 아래에서
+      distance: '50px',       // 50px만큼 이동하며
+      duration: 1000,         // 1초 동안 등장
+      delay: 100,             // 약간의 지연
+      easing: 'ease-in-out',
+      reset: false            // 한 번만 등장하게 (true로 바꾸면 다시 등장)
+    });
+  </script>
 </body>
 
 </html>

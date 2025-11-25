@@ -73,7 +73,7 @@ a {
 .profile_card {
     display: flex;
     flex-direction: row;
-    gap: 28px;
+    gap: 56px;
     width: 1200px;
     padding: 83px 78px;
     box-sizing: border-box;
